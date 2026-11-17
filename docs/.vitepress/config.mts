@@ -41,7 +41,7 @@ export default defineConfig({
 
 function nav() {
   return [
-    { text: '首页', link: '/' },
+    
     { text: '我的笔记', link: '/blog/', activeMatch: '/blog/' },
   ]
 }
