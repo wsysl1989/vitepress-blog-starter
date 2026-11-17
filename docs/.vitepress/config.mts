@@ -6,11 +6,7 @@ import { version } from '../../package.json'
 export default defineConfig({
   base: '/',
   description: '我的个人笔记与博客',
-  markdown: {
-    headers: {
-      level:,
-    },
-  },
+  
   themeConfig: {
     footer: {
       message: 'Powered by VitePress',
