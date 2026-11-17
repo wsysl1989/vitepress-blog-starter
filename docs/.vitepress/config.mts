@@ -4,17 +4,17 @@ import { defineConfig } from 'vitepress'
 import { version } from '../../package.json'
 
 export default defineConfig({
-  base: '/vitepress-blog-starter/',
-  description: 'Blog included. Built on top of VitePress and UnoCSS.',
+  base: '/',
+  description: '我的个人笔记与博客',
   markdown: {
     headers: {
-      level: [0, 0],
+      level:,
     },
   },
   themeConfig: {
     footer: {
-      message: 'VitePress Blog Starter',
-      copyright: 'Copyright © 2023 SFXCode',
+      message: 'Powered by VitePress',
+      copyright: 'Copyright © 2026',
     },
     search: {
       provider: 'local',
@@ -22,22 +22,18 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/sfxcode/vitepress-blog-starter' },
     ],
-    editLink: {
-      pattern: 'https://github.com/sfxcode/vitepress-blog-starter/edit/main/docs/:path',
-      text: 'Edit this page on GitHub',
-    },
     nav: nav(),
     sidebar: {
       '/guide/': sidebarGuide(),
       '/config/': sidebarConfig(),
     },
     blog: {
-      title: 'My Blog',
-      description: 'Some articles for sample Blog',
+      title: '我的笔记',
+      description: '记录日常学习与思考',
     },
 
   },
-  title: 'VitePress Blog Starter',
+  title: '我的笔记空间',
   vite: {
     plugins: [
       Unocss({
@@ -49,11 +45,11 @@ export default defineConfig({
 
 function nav() {
   return [
-    { text: 'Guide', link: '/guide/', activeMatch: '/guide/' },
-    { text: 'Configs', link: '/config/', activeMatch: '/config/' },
-    { text: 'Blog', link: '/blog/', activeMatch: '/blog/' },
+    { text: '指南', link: '/guide/', activeMatch: '/guide/' },
+    { text: '配置', link: '/config/', activeMatch: '/config/' },
+    { text: '博客笔记', link: '/blog/', activeMatch: '/blog/' },
     {
-      text: 'External Docs',
+      text: '参考文档',
       items: [
         {
           text: 'Vitepress',
