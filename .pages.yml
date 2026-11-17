@@ -1,0 +1,16 @@
+media:
+  input: docs/public/images
+  output: /images
+
+content:
+  - name: blog
+    label: 我的笔记与文章
+    type: collection
+    path: docs/blog
+    view:
+      fields: [ title, date ]
+    fields:
+      - { name: title, label: 文章标题, type: string, required: true }
+      - { name: date, label: 发布日期, type: date }
+      - { name: author, label: 作者, type: string, default: sfxcode }
+      - { name: body, label: 正文内容, type: rich-text }
