@@ -41,31 +41,8 @@ export default defineConfig({
 
 function nav() {
   return [
-    { text: '指南', link: '/guide/', activeMatch: '/guide/' },
-    { text: '配置', link: '/config/', activeMatch: '/config/' },
-    { text: '博客笔记', link: '/blog/', activeMatch: '/blog/' },
-    {
-      text: '参考文档',
-      items: [
-        {
-          text: 'Vitepress',
-          link: 'https://vuejs.org',
-        },
-        {
-          text: 'UnoCSS',
-          link: 'https://antfu.me',
-        },
-      ],
-    },
-    {
-      text: version,
-      items: [
-        {
-          text: 'Changelog',
-          link: 'https://github.com/blob/main/CHANGELOG.md',
-        },
-      ],
-    },
+    { text: '首页', link: '/' },
+    { text: '我的笔记', link: '/blog/', activeMatch: '/blog/' },
   ]
 }
 
