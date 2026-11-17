@@ -20,7 +20,7 @@ export default defineConfig({
       provider: 'local',
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/sfxcode/vitepress-blog-starter' },
+      { icon: 'github', link: 'https://github.com' },
     ],
     nav: nav(),
     sidebar: {
@@ -53,11 +53,11 @@ function nav() {
       items: [
         {
           text: 'Vitepress',
-          link: 'https://vitepress.vuejs.org',
+          link: 'https://vuejs.org',
         },
         {
           text: 'UnoCSS',
-          link: 'https://uno.antfu.me',
+          link: 'https://antfu.me',
         },
       ],
     },
@@ -66,7 +66,7 @@ function nav() {
       items: [
         {
           text: 'Changelog',
-          link: 'https://github.com/sfxcode/vitepress-blog-starter/blob/main/CHANGELOG.md',
+          link: 'https://github.com/blob/main/CHANGELOG.md',
         },
       ],
     },
